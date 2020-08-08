@@ -1,28 +1,29 @@
 // 导入组件
-import AlLink from '@/components/AlLink.vue'
-import AlButton from '@/components/AlButton.vue'
-import AlInput from '@/components/AlInput.vue'
-import AlSwitch from '@/components/AlSwitch.vue'
-import AlFormItem from '@/components/AlFormItem.vue'
-import AlForm from '@/components/AlForm.vue'
-import AlContainer from '@/components/AlContainer.vue'
-import AlDialog from '@/components/AlDialog.vue'
+import myLink from '@/components/myLink.vue'
+import myButton from '@/components/myButton.vue'
+import myInput from '@/components/myInput.vue'
+import mySwitch from '@/components/mySwitch.vue'
+import myFormItem from '@/components/myFormItem.vue'
+import myForm from '@/components/myForm.vue'
+import myContainer from '@/components/myContainer.vue'
+import myDialog from '@/components/myDialog.vue'
+
 // Vue构造函数
 export default function (Vue) {
-  // 注册组件 Al-link
-  Vue.component(AlLink.name, AlLink)
-  // 注册组件 Al-button
-  Vue.component(AlButton.name, AlButton)
-  // 注册组件 Al-input
-  Vue.component(AlInput.name, AlInput)
-  // 注册组件 Al-switch
-  Vue.component(AlSwitch.name, AlSwitch)
-  // 注册组件 Al-form-item
-  Vue.component(AlFormItem.name, AlFormItem)
-  // 注册组件 Al-form
-  Vue.component(AlForm.name, AlForm)
-  // 注册组件 Al-container
-  Vue.component(AlContainer.name, AlContainer)
-  // 注册组件 Al-dialog
-  Vue.component(AlDialog.name, AlDialog)
+  // 注册组件 my-link
+  Vue.component(myLink.name, myLink)
+  // 注册组件 my-button
+  Vue.component(myButton.name, myButton)
+  // 注册组件 my-input
+  Vue.component(myInput.name, myInput)
+  // 注册组件 my-switch
+  Vue.component(mySwitch.name, mySwitch)
+  // 注册组件 my-form-item
+  Vue.component(myFormItem.name, myFormItem)
+  // 注册组件 my-form
+  Vue.component(myForm.name, myForm)
+  // 注册组件 my-container
+  Vue.component(myContainer.name, myContainer)
+  // 注册组件 my-dialog
+  Vue.component(myDialog.name, myDialog)
 }

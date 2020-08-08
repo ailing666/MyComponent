@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import AlLink from '@/components/AlLink.vue'
-import AlButton from '@/components/AlButton.vue'
-import AlInput from '@/components/AlInput.vue'
-import AlSwitch from '@/components/AlSwitch.vue'
-import AlFormItem from '@/components/AlFormItem.vue'
-import AlForm from '@/components/AlForm.vue'
-import AlContainer from '@/components/AlContainer.vue'
-import AlDialog from '@/components/AlDialog.vue'
+import AlLink from '@/views/alLink/AlLink.vue'
+import AlButton from '@/views/alButton/AlButton.vue'
+import AlInput from '@/views/alInput/AlInput.vue'
+import AlSwitch from '@/views/alSwitch/AlSwitch.vue'
+import AlFormItem from '@/views/alFormItem/AlFormItem.vue'
+import AlForm from '@/views/alForm/AlForm.vue'
+import AlContainer from '@/views/alContainer/AlContainer.vue'
+import AlDialog from '@/views/alDialog/AlDialog.vue'
 
 Vue.use(VueRouter)
 

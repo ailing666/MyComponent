@@ -1,13 +1,46 @@
 <template>
-  <a href="#" class="my-link my-link--primary is-underline">
-    <span class="my-link--inner">默认链接</span>
-    sadfasdf
+  <!-- 
+   跳转链接href:在子组件标签上直接传入
+   后备插槽:传入文字就用传入的文字,否则显示默认文字
+   颜色:通过切换拼接类名实现
+   下划线:通过boolean值切换显示或隐藏
+  -->
+  <a
+    href="#"
+    class="my-link my-link--primary "
+    :class="[{ 'is-underline': underline }, `my-link--${type}`]"
+  >
+    <span class="my-link--inner">
+      <slot>默认链接</slot>
+    </span>
   </a>
 </template>
 
 <script>
 export default {
-  name: 'my-link'
+  name: 'my-link',
+  props: {
+    // 是否显示下滑线,boolean类型,默认为true
+    underline: {
+      type: Boolean,
+      default: true
+    },
+    // 样式
+    type: {
+      type: String,
+      default: 'default',
+      validator (value) {
+        return [
+          'default',
+          'primary',
+          'success',
+          'warning',
+          'danger',
+          'info'
+        ].includes(value)
+      }
+    }
+  }
 }
 </script>
 
