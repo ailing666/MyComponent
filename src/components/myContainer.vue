@@ -1,17 +1,17 @@
 <template>
-  <div class="al-container">
+  <div class="my-container">
     <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'al-container'
+  name: 'my-container'
 }
 </script>
 
 <style>
-.al-container {
+.my-container {
   padding: 10px;
   background-color: orange;
 }
