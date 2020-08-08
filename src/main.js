@@ -6,6 +6,10 @@ import store from './store'
 import './style/iconfont.css'
 // 导入组件
 import myComs from './components'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+
+Vue.use(ElementUI)
 Vue.use(myComs)
 Vue.config.productionTip = false
 

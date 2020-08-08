@@ -1,6 +1,7 @@
 <template>
   <a href="#" class="my-link my-link--primary is-underline">
     <span class="my-link--inner">默认链接</span>
+    sadfasdf
   </a>
 </template>
 

@@ -1,12 +1,12 @@
 // 导入组件
-import AlLink from './AlLink.vue'
-import AlButton from './AlButton.vue'
-import AlInput from './AlInput.vue'
-import AlSwitch from './AlSwitch.vue'
-import AlFormItem from './AlFormItem.vue'
-import AlForm from './AlForm.vue'
-import AlContainer from './AlContainer.vue'
-import AlDialog from './AlDialog.vue'
+import AlLink from '@/components/AlLink.vue'
+import AlButton from '@/components/AlButton.vue'
+import AlInput from '@/components/AlInput.vue'
+import AlSwitch from '@/components/AlSwitch.vue'
+import AlFormItem from '@/components/AlFormItem.vue'
+import AlForm from '@/components/AlForm.vue'
+import AlContainer from '@/components/AlContainer.vue'
+import AlDialog from '@/components/AlDialog.vue'
 // Vue构造函数
 export default function (Vue) {
   // 注册组件 Al-link
