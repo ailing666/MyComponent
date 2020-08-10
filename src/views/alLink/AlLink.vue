@@ -57,6 +57,37 @@
         </tr>
         <tr>
           <td>type</td>
+          <td>类型</td>
+          <td>string</td>
+          <td>primary/success/warning/danger/info</td>
+          <td>primary</td>
+        </tr>
+        <tr>
+          <td>underline</td>
+          <td>是否需要下划线</td>
+          <td>boolean</td>
+          <td>-</td>
+          <td>true</td>
+        </tr>
+
+        <tr>
+          <td>href</td>
+          <td>原生href属性</td>
+          <td>string</td>
+          <td></td>
+          <td>#</td>
+        </tr>
+      </table>
+      <!-- <table border>
+        <tr>
+          <th>参数</th>
+          <th>说明</th>
+          <th>类型</th>
+          <th>可选值</th>
+          <th>默认值</th>
+        </tr>
+        <tr>
+          <td>type</td>
           <td>按钮类型</td>
           <td>string</td>
           <td>primary/success/warning/danger/info</td>
@@ -85,7 +116,7 @@
           <td></td>
           <td></td>
         </tr>
-      </table>
+      </table> -->
       <h5>插槽:</h5>
       <table border>
         <tr>
@@ -123,35 +154,4 @@ export default {
 }
 </script>
 
-<style lang="less">
-.textarea-wrapper {
-  position: relative;
-  min-height: 20px;
-  width: 100%;
-}
-.content {
-  display: block;
-  visibility: hidden;
-  font-size: 14px;
-  color: #333333;
-  line-height: 1.3;
-  word-wrap: break-word;
-  font-family: SourceHanSansCN-Regular;
-  padding: 0;
-}
-.textarea-wrapper textarea {
-  overflow: hidden;
-  resize: none;
-  width: 100%;
-  height: 100%;
-  border: 1px solid #dadde0;
-  font-family: SourceHanSansCN-Regular;
-  font-size: 14px;
-  color: #333333;
-  line-height: 1.3;
-  padding: 0px;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-</style>
+<style lang="less"></style>

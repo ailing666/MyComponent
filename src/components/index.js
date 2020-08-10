@@ -7,6 +7,7 @@ import myFormItem from '@/components/myFormItem.vue'
 import myForm from '@/components/myForm.vue'
 import myContainer from '@/components/myContainer.vue'
 import myDialog from '@/components/myDialog.vue'
+import myTem from '@/components/myTem.vue'
 
 // Vue构造函数
 export default function (Vue) {
@@ -26,4 +27,5 @@ export default function (Vue) {
   Vue.component(myContainer.name, myContainer)
   // 注册组件 my-dialog
   Vue.component(myDialog.name, myDialog)
+  Vue.component(myTem.name, myTem)
 }

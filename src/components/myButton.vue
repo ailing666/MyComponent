@@ -1,12 +1,37 @@
 <template>
-  <button type="button" class="my-button my-button--primary is-disabled">
-    <span>默认按钮</span>
+  <button
+    class="my-button "
+    @click="click"
+    :class="[type ? `my-button--${type}` : type, { 'is-disabled': disabled }]"
+  >
+    <slot>默认按钮</slot>
   </button>
 </template>
 
 <script>
 export default {
-  name: 'my-button'
+  name: 'my-button',
+  props: {
+    type: {
+      type: String,
+      defaule: '',
+      validator (value) {
+        return ['', 'primary', 'success', 'warning', 'danger', 'info'].includes(
+          value
+        )
+      }
+    },
+    disabled: {
+      type: Boolean,
+      // 默认启用
+      default: false
+    }
+  },
+  methods: {
+    click (event) {
+      this.$emit('btnClick', event)
+    }
+  }
 }
 </script>
 <style lang="less">
