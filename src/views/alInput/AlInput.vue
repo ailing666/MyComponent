@@ -39,6 +39,24 @@
       </template>
       <template #code> </template>
     </myTem>
+    <myTem :obj="inputObj.blur">
+      <template #title>
+        失去焦点
+      </template>
+      <template #body>
+        <my-input @blur="blur"></my-input>
+      </template>
+      <template #code> </template>
+    </myTem>
+    <myTem :obj="inputObj.focus">
+      <template #title>
+        获取焦点
+      </template>
+      <template #body>
+        <my-input @focus="focus"></my-input>
+      </template>
+      <template #code> </template>
+    </myTem>
     <h5>Attributes</h5>
     <table border>
       <tr>
@@ -110,13 +128,21 @@ export default {
         type: `        <my-input placeholder="密码框" type="password"></my-input>
         <my-input placeholder="数字" type="number"></my-input>`,
         disabled: `       <my-input placeholder="禁用" disabled></my-input>`,
-        model: `        <my-input v-model="value"></my-input>`
+        model: `        <my-input v-model="value"></my-input>`,
+        blur: ` <my-input @blur="blur"></my-input>`,
+        focus: ` <my-input @focus="focus"></my-input>`
       }
     }
   },
   methods: {
     input (value) {
       this.value = value
+    },
+    blur (event) {
+      window.console.log(event)
+    },
+    focus (event) {
+      window.console.log(event)
     }
   }
 }

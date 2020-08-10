@@ -8,6 +8,8 @@
       class="my-input__inner"
       :value="value"
       @input="input"
+      @blur="blur"
+      @focus="focus"
     />
   </div>
 </template>
@@ -26,6 +28,12 @@ export default {
     input (event) {
       window.console.log(event.target.value)
       this.$emit('input', event.target.value)
+    },
+    blur (event) {
+      this.$emit('blur', event)
+    },
+    focus (event) {
+      this.$emit('focus', event)
     }
   }
 }
