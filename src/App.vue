@@ -42,6 +42,9 @@ table {
 .code {
   display: block;
   width: 100%;
+  min-height: 20px;
+  max-height: 300px;
+  _height: 120px;
   padding: 6px 8px;
   background: rgba(248, 249, 251, 0.8);
   border: 1px solid #dadde0;
@@ -55,5 +58,6 @@ table {
   box-sizing: border-box;
   -webkit-transition: height 0.3s ease-in-out;
   transition: height 0.3s ease-in-out;
+  white-space: pre-wrap;
 }
 </style>
