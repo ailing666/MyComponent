@@ -1,16 +1,33 @@
 <template>
   <div class="my-input ">
     <input
-      type="text"
+      :type="$attrs.type"
+      :placeholder="$attrs.placeholder"
       autocomplete="off"
-      placeholder="请输入内容"
+      :disabled="$attrs.disabled"
       class="my-input__inner"
+      :value="value"
+      @input="input"
     />
   </div>
 </template>
 <script>
 export default {
-  name: 'my-input'
+  name: 'my-input',
+  inheritAttrs: false,
+
+  props: {
+    value: {
+      // 支持2中类型
+      type: [String, Number]
+    }
+  },
+  methods: {
+    input (event) {
+      window.console.log(event.target.value)
+      this.$emit('input', event.target.value)
+    }
+  }
 }
 </script>
 <style lang="less">

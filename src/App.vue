@@ -24,10 +24,7 @@
 
 <script>
 export default {
-  name: 'App',
-  created () {
-    window.console.log(this.$router.options)
-  }
+  name: 'App'
 }
 </script>
 <style>
